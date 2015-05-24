@@ -1,5 +1,20 @@
-#makeCacheMatrix: function creates a special "matrix" object that can cache its inverse.
+# Functions that cache the inverse of a matrix
+#
+# Usage example:
+#
+# > source('cachematrix.R')
+# > m <- makeCacheMatrix(newM <- matrix(1:4, nrow = 2, ncol = 2))
+# m$getM()
+#      [,1] [,2]
+# [1,]    1    3
+# [2,]    2    4
+# cacheSolve(m)
+#      [,1] [,2]
+# [1,]   -2  1.5
+# [2,]    1 -0.5
 
+
+#makeCacheMatrix: function creates a special "matrix" object that can cache its inverse.
 #setM sets the matrix
 #getM gets the matrix
 #setInv sets the inverse matrix
